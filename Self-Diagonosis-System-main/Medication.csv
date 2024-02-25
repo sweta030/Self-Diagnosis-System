@@ -1,0 +1,49 @@
+Diseases,Medicine name,Dosage,Test Required
+Fungal infection,garden of life fungal defence,"5 days, twice a day, after meal",Fungal culture test
+Allergy,Source Naturals Allercetin Allergy & Sinus Homeopathic,"30 days, once a day , before breakfast","Intradermal skin testing 
+Prick skin testing"
+GERD,Rite Aid Acid Reducer Tablets,"25 days , twice a day ,after meal","upper endoscopy
+impedance-pH test
+Bravo pH monitoring
+esophageal manometry
+barium swallow"
+Chronic cholestasis,Boiron Ignatia Amara 30c Homeopathic,"60 days , twice a day ,after meal","Enzyme tests
+Bile acid levels test
+Liver biopsy"
+Drug Reaction,Lactmed Laxative Oral Solution,"10 days ,2 spoon twice a day ,after meal",Drug reaction testing
+Peptic ulcer diseae,Vensore Topical Anti-Infective Ointment ,"30 days,apply twice a day",H. pylori
+AIDS,Boiron Sambucus Nigra 6C Homeopathic,"30 days , twice a day ,after meal",HIV Tests
+Diabetes ,Carlson Labs NutraSupport,"15 days , twice a day , before meal",Blood glucose test
+Gastroenteritis,Rotavirus vaccine,"3 weeks ,one weekly",NA
+Bronchial Asthma,Inhaled long-acting beta-2-agonists,"1 year , thrice a day",Inhaled long-acting beta-2-agonists
+Hypertension ,Alpha-blockers,"30 days, once a day , before breakfast",Blood pressure test
+Migraine,ACA Migraine/Headache Care Medicin,"3o days , once a day , if headache occurs",NA
+Cervical spondylosis,NA,Wear akzu Cervical Neck Traction Device,CT Scan
+Paralysis (brain hemorrhage),Hemorrhoid Ointment,"1 year , thrice a day",CT scan
+Jaundice, Cipzer Herbals juice,"30 days , twice a day ,after meal", bilirubin test 
+Malaria,Antimalarial drugs,"30 days , twice a day ,after meal",blood test
+Chicken pox,Antipyretics,when ever there is feaver,blood test
+Dengue,Dr Batra's Homeo+ Immunity Medicine Drops,"3o days , once a day , if headache occurs",blood test
+Typhoid,paracetamol,when ever there is feaver,blood and waidal test
+hepatitis A,harvoni,"15 days , twice a day , before meal",Blood test
+Hepatitis B,Engerix B,"30 days , twice a day ,after meal",Blood test
+Hepatitis C,Solvaldi,"15 days , twice a day , before meal",Blood test
+Hepatitis D,Epclusa,"15 days , twice a day , before meal",Blood test
+Hepatitis E,Hepcvir,"15 days , twice a day , before meal",Blood test
+Alcoholic hepatitis,Vosevi,"1 year , thrice a day",Blood test
+Tuberculosis,Rifater,"25 days , twice a day ,after meal","CT scan , Pleural fluid analysis"
+Common Cold,Strinsis,"5 days, twice a day, after meal",NA
+Pneumonia,Moxicin,"1 year , thrice a day",Blood tests
+Dimorphic hemmorhoids(piles),Hemocyl,"60 days , twice a day ,after meal","Sigmoidoscopy , Digital rectal scan"
+Heart attack,Advil,"30 days , twice a day ,after meal",Cardiac enzymes test
+Varicose veins,Varicose,"15 days , twice a day , before meal","Physical examination , Venogram"
+Hypothyroidism,Levothyroxine Overused ,"1 year , thrice a day","TFTs , Thyroid scan"
+Hyperthyroidism,Thyroid Reduce 911,"30 days , twice a day ,after meal","CBC , Thyroid scan"
+Hypoglycemia,Oral hypoglycemia drugs(OHA),"25 days , twice a day ,after meal",Blood glucose test
+Osteoarthristis,Cartfit,"60 days , twice a day ,after meal","x-ray , MRI"
+Arthritis,Artheron 5,"60 days , twice a day ,after meal","ESR ,  ANA , MRI X-ray"
+(vertigo) Paroymsal  Positional Vertigo,heptivin ,"15 days , twice a day , before meal",Dix-Hallpike test
+Acne,Adult Acromen,"30 days , twice a day ,after meal", diagnostic tests
+Urinary tract infection,Cystrx,"1 year , thrice a day","Urine analysis ,Cystoscopy, CT scan"
+Psoriasis,Psoriasin Gel Multi,"25 days , apply  twice a day "," Skin biopsy , Physical examination , CBC"
+Impetigo,Topical antibiotics: Creams or ointments,"60 days , apply twice a day","Swab test , Physical examination"

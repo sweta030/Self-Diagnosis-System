@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav
+    class="navbar navbar-expand-lg bg-body-tertiary bg-primary"
+    data-bs-theme="dark"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BeHealthy</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/"
+              >Self Diagnosis</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/verify">Test Verification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/user_account">Account</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Appointment
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/doctor">Doctor</a></li>
+              <li><a class="dropdown-item" href="/hospital">Hospital</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <b style="color:blue;">Name:</b>{{todo.name}}
+    <br />
+    <b style="color:blue;">Email:</b> {{todo.email_id}}
+    <br />
+    <b style="color:blue;">Phone Number:</b>{{todo.phone_number}}
+    <br />
+    <b style="color:blue;">Aadhar:</b>{{todo.aadhar}}
+    <br />
+    <b style="color:blue;">Birth Date:</b>{{todo.birth_date}}
+    <br />
+    <b style="color:blue;">Blood Group:</b>{{todo.blood_grp}}
+    <br />
+    <b style="color:blue;">Weight:</b>{{todo.weight}}
+    <br />
+    <b style="color:blue;">Height:</b>{{todo.height}}
+    <br />
+    <h3>Edit Account</h3>
+    <form action="/edit/{{todo.sno}}" method="POST">
+      <div class="mb-3">
+        <label class="form-label">Value</label>
+        <input
+          type="number"
+          class="form-control"
+          name="val"
+          id="val"
+          aria-describedby="emailHelp"
+        />
+        <select
+              name="role"
+              class="form-select form-select"
+              aria-label=".form-select-sm example"
+            >
+              <option selected>Open this select menu</option>
+              <option name="role" id="role" value="ph_num">Phone Number</option>
+              <option name="role" id="role" value="weight">Weight</option>
+              <option name="role" id="role" value="height">Height</option>
+            </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h3>Add Blood Pressure</h3>
+
+    <form action="/add_bp/{{todo.sno}}" method="POST">
+      <div class="mb-3">
+        <label class="form-label">Systolic(upper level)</label>
+        <input
+          type="number"
+          class="form-control"
+          name="up"
+          id="up"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Diastolic(lower level)</label>
+        <input
+          type="number"
+          class="form-control"
+          name="low"
+          id="low"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <img src="/press_plot/{{todo.sno}}" alt="my plot" />
+    <br />
+    <h3>Add Sugar</h3>
+    <form action="/add_sugar/{{todo.sno}}" method="POST">
+      <div class="mb-3">
+        <label class="form-label">After meal</label>
+        <input
+          type="number"
+          class="form-control"
+          name="up"
+          id="up"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Fasting</label>
+        <input
+          type="number"
+          class="form-control"
+          name="low"
+          id="low"
+          aria-describedby="emailHelp"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <img src="/sugar_plot/{{todo.sno}}" alt="my plot" />
+    <br />
+    <h3>Upload New Test Report</h3>
+    <form
+      action="/upload/{{todo.sno}}"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input type="file" name="file1" />
+      <label class="form-select">Test Report </label>
+      <input type="text" name="role" id="role" />
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br>
+    <h3>ALL Previous Test Reports</h3>
+    <table class="table">
+      <thead>
+        <tr bgcolor="blue">
+          <th scope="col" >#</th>
+          <th scope="col">NAME</th>
+          <th scope="col">Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in test %}
+        <tr>
+          <th scope="row">{{loop.index}}</th>
+          <td>{{i.name}}</td>
+          <td><button type="button" class="btn btn-primary" href="/download/{{i.sno}}"><span class="bi bi-download green-color"></span></button></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
